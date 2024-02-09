@@ -1,16 +1,170 @@
-html, body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    color: #212529;
 }
 
 body {
-    background-color: black;
+    height: 100%;
+}
+
+/* Navigation */
+header {
+    padding: 24px 48px;
+    position: relative;
+}
+
+.hide-overflow {
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav li a {
+    position: relative;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: inherit;
+}
+
+nav li a::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    content: "";
+    width: 0;
+    height: 1.5px;
+    background-color: #212529;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
+nav #resume {
+    margin-right: 48px;
+    position: absolute;
+    right: 0;
+}
+
+#nav-content {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-h1 {
-    color: white;
+#nav-icon {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    /* Hamburger Icon */
+    #nav-icon {
+        display: block;
+        position: absolute;
+        right: 48px;
+        cursor: pointer;
+        z-index: 3;
+    }
+
+    #nav-icon span {
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin: 5px 0;
+        background-color: #212529;
+    }
+
+    #nav-icon span:not(span#mid) {
+        transition: all 0.3s ease 0s;
+    }
+    
+    #nav-icon.activated span {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    #nav-icon.activated span#top {
+        transform: rotate(-45deg) translate(0, 14px);
+    }
+
+    #nav-icon.activated span#mid {
+        transform: scale(0);
+    }
+
+    #nav-icon.activated span#end {
+        transform: rotate(45deg) translate(0, -14px);
+    }
+
+    nav ul,
+    nav #resume {
+        position: static;
+        padding: 0;
+    }
+
+    nav li a,
+    nav #resume {
+        color: #fff;
+        font-size: 28px;
+        margin: 24px 0;
+    }
+
+    nav #resume {
+        border-color: #fff !important;
+    }
+
+    nav li a::after {
+        background-color: #fff;
+    }
+
+    #nav-content {
+        position: fixed;
+        top: 0;
+        left: -200%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        transition: left 0.3s ease 0s;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #nav-content.activated {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul a {
+        margin: 24px 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Sections */
+section {
+    height: 100vh;
 }
