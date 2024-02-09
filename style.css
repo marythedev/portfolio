@@ -82,6 +82,7 @@ nav #resume {
         right: 48px;
         cursor: pointer;
         z-index: 3;
+        margin-top: -14px;
     }
 
     #nav-icon span {
