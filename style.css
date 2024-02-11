@@ -73,6 +73,52 @@ nav #resume {
     display: none;
 }
 
+/* Sections */
+section {
+    height: 100vh;
+}
+
+/* Home Page */
+#home {
+    text-align: center;
+}
+
+#home-content {
+    flex: 1;
+}
+
+#social-links img {
+    margin: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#social-links img:hover {
+    transform: scale(1.05);
+}
+
+#scroll-down-icon {
+    margin: 20px;
+    animation: scrollDown 1.5s infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-10px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+    80% {
+        transform: translateY(0px);
+    }
+}
+
 @media screen and (max-width: 992px) {
 
     /* Hamburger Icon */
@@ -81,7 +127,7 @@ nav #resume {
         position: absolute;
         right: 48px;
         cursor: pointer;
-        z-index: 3;
+        z-index: 5;
         margin-top: -14px;
     }
 
@@ -140,8 +186,9 @@ nav #resume {
         left: -200%;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
+        background-color: rgb(29, 29, 29);
         transition: left 0.3s ease 0s;
+        z-index: 3;
 
         flex-direction: column;
         justify-content: center;
@@ -163,9 +210,4 @@ nav #resume {
         text-align: center;
         width: 100%;
     }
-}
-
-/* Sections */
-section {
-    height: 100vh;
 }
