@@ -9,6 +9,11 @@ body {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Navigation */
 header {
     padding: 24px 48px;
@@ -89,7 +94,7 @@ section {
 
 #social-links img {
     margin: 10px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 #social-links img:hover {
@@ -117,6 +122,17 @@ section {
     80% {
         transform: translateY(0px);
     }
+}
+
+/* Footer */
+footer {
+    /*padding: 24px 48px;*/
+    text-align: center;
+    background-color: rgb(29, 29, 29);
+}
+
+footer * {
+    color: #fff;
 }
 
 @media screen and (max-width: 992px) {
