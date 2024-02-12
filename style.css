@@ -24,7 +24,7 @@ a {
 
 /* Navigation */
 header {
-    padding: 24px 48px;
+    padding: 12px 48px;
     position: relative;
     background-color: rgba(255, 255, 255, 0.7);
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.3);
@@ -140,7 +140,6 @@ section {
 
 /* Footer */
 footer {
-    /*padding: 24px 48px;*/
     text-align: center;
     background-color: rgb(29, 29, 29);
 }

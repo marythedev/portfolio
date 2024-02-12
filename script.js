@@ -48,7 +48,7 @@ particlesJS("", {
             }
         },
         "color": {
-            "value": "#d1cece"  // nice colors: #A4957D (0.2 opacity), #d1cece (0.4), #DCDCDC (0.6-0.7), #C0C0C0 (0.3)
+            "value": "#DCDCDC"  // nice colors: #A4957D (0.2 opacity), #d1cece (0.4), #DCDCDC (0.6-0.7), #C0C0C0 (0.3)
         },
         "shape": {
             "type": "polygon",
@@ -61,7 +61,7 @@ particlesJS("", {
             },
         },
         "opacity": {
-            "value": 0.4,
+            "value": 0.6,
             "random": true,
             "anim": {
                 "enable": false,
