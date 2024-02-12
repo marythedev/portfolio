@@ -13,9 +13,10 @@
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <section id="home" class="d-flex flex-column justify-content-start">
         <header class="d-flex align-items-center justify-content-between">
-            <img src="./img/avatar.png" alt="avatar" class="rounded-circle" width="70" height="70">
+            <img src="./img/avatar.png" alt="avatar" class="rounded-circle img-fluid" width="70" height="70">
             <nav>
                 <div id="nav-icon">
                     <span id="top"></span>
@@ -29,15 +30,17 @@
                         <li><a data-scroll-section="projects" href="#">Projects</a></li>
                         <li><a data-scroll-section="contact" href="#">Contact</a></li>
                     </ul>
-                    <a id="resume" href="https://drive.google.com/file/d/1iewbEpQ_rz01SfrTeIvuZCyXpSW6ybbz/view?usp=sharing" target="_blank">
+                    <a id="resume"
+                        href="https://drive.google.com/file/d/1iewbEpQ_rz01SfrTeIvuZCyXpSW6ybbz/view?usp=sharing"
+                        target="_blank">
                         <button class="btn btn-outline-dark rounded-0">View Resume</button>
                     </a>
                 </div>
             </nav>
         </header>
         <div id="home-content" class="d-flex flex-column justify-content-center align-items-center">
-            <h1>Hello, I'm Maria</h1>
-            <h3>Fullstack Developer</h3>
+            <h1 class="display-1">Hello, I'm Maria</h1>
+            <h3 class="display-6 text-muted">Fullstack Developer</h3>
             <div id="social-links">
                 <a href="https://www.linkedin.com/in/marythedev/" target="_blank">
                     <img src="./img/linkedin-logo.png" alt="linkedin" width="40" height="40">
@@ -63,11 +66,13 @@
     <section id="contact">
         <h1>Contact</h1>
     </section>
-    
+
     <footer>
         <small>&copy; <span id="year"></span> Maria Dmytrenko</small>
     </footer>
 
+    <!-- https://github.com/VincentGarreau/particles.js/ -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
