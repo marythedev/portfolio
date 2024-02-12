@@ -6,6 +6,7 @@
     font-size: 16px;
 }
 
+html,
 body {
     height: 100%;
 }
@@ -26,7 +27,7 @@ a {
 header {
     padding: 12px 48px;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.3);
 }
 
@@ -102,13 +103,35 @@ section {
     flex: 1;
 }
 
+#home .display-1,
+#home .display-6 {
+    font-weight: 550;
+    font-family: "League Spartan", sans-serif;
+}
+
+#home .display-1 {
+    font-size: 90px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    padding: 10px;
+}
+
+#home .display-6 {
+    font-size: 36px;
+    padding: 0 10px 10px 10px;
+}
+
 #social-links img {
-    margin: 10px;
+    margin: 15px;
     transition: all 0.3s ease-in-out;
 }
 
 #social-links img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 #scroll-down-icon {
@@ -227,6 +250,15 @@ footer * {
 
     #nav-content.activated {
         left: 0;
+    }
+
+    /* Hone Section */
+    #home .display-1 {
+        font-size: 4rem;
+    }
+    
+    #home .display-6 {
+        font-size: 2.5rem;
     }
 }
 
