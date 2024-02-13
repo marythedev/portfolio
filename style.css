@@ -249,6 +249,11 @@ footer * {
         border-color: #fff;
     }
 
+    .btn-outline-dark:hover {
+        background-color: #fff;
+        color: #212529;
+    }
+
     nav li a::after {
         background-color: #fff;
     }
