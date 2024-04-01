@@ -193,8 +193,10 @@ section {
 }
 
 #about-content {
-    padding-left: 475px;
-    padding-right: 100px;
+    padding: 0 20%;
+    /* Add if gradient line is active */
+    /* padding-left: 475px;
+    padding-right: 100px; */
 }
 
 #line-gradient {
@@ -249,12 +251,12 @@ section {
 
 #skills i {
     font-size: 60px;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 #skills img {
     height: 60px;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 #skills {
@@ -290,24 +292,40 @@ footer * {
     color: #fff;
 }
 
-@media screen and (min-width: 2171px){
+@media screen and (min-width: 2171px) {
     #about {
         padding-bottom: 300px;
     }
 }
 
 
-@media screen and (min-width: 1647px){
+@media screen and (min-width: 1647px) {
     #about {
         padding-bottom: 175px;
     }
 }
 
-@media screen and (min-width: 1100px) {
+/* Remove if gradient line is active */
+@media screen and (min-width: 1350px) {
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #about-content {
+        width: 950px;
+        padding: 0;
+    }
+}
+
+/* Add if gradient line is active */
+/* @media screen and (min-width: 1100px) {
     #about-content {
         padding-right: 15%;
     }
-}
+} */
 
 @media screen and (max-width: 992px) {
 
