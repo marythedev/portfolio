@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
@@ -30,10 +32,10 @@
                 </div>
                 <div id="nav-content">
                     <ul class="d-flex justify-content-center">
-                        <li><a data-scroll-section="home" href="#">Home</a></li>
-                        <li><a data-scroll-section="about" href="#">About</a></li>
-                        <li><a data-scroll-section="projects" href="#">Projects</a></li>
-                        <li><a data-scroll-section="contact" href="#">Contact</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                     <a id="resume"
                         href="https://drive.google.com/file/d/1iewbEpQ_rz01SfrTeIvuZCyXpSW6ybbz/view?usp=sharing"
@@ -55,13 +57,106 @@
                 </a>
             </div>
         </div>
-        <a href="#" data-scroll-section="about">
-            <img src="./img/arrow-down.png" id="scroll-down-icon" alt="scroll-down" width="35" height="35">
+        <a href="#about">
+            <img src="./img/arrow.png" id="scroll-down-icon" alt="scroll-down" width="35" height="35">
         </a>
     </section>
 
     <section id="about">
-        <h2>About</h2>
+        <!-- Gradient colors: #ee7752, #e73c7e, #23a6d5, #23d5ab -->
+        <div class="d-flex flex-column" id="line-gradient">
+            <div style="background: linear-gradient(transparent, #23D5AB 10%, #23A6D5 25%, #E73C7E 40%, #EE7752 80%, transparent 100%); height: 100%;"
+                class="gradient-line">
+                <div class="d-flex flex-column">
+                    <div class="d-flex">
+                        <img src="./img/education.png" width="25px" height="20px" class="gradient-icon">
+                        <div>
+                            <h3>Education</h3>
+                            <div class="gradient-paragraph">
+                                <div>
+                                    <p class="title">Honors Bachelor of Technology - Software Development</p>
+                                    <p>Seneca Polytechnic, Toronto</p>
+                                    <p>Sep 2021 – Present</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="d-flex">
+                        <img src="./img/experience.png" width="25px" height="19px" class="gradient-icon">
+                        <div id="experience">
+                            <h3>Experience</h3>
+                            <div class="gradient-paragraph">
+                                <div>
+                                    <p class="title">Website Administrator</p>
+                                    <p>North Toronto CI, Toronto</p>
+                                    <p>Nov 2020 - Jun 2021</p>
+                                </div>
+                                <div>
+                                    <p class="title">IT Associate</p>
+                                    <p>Netex Enterprises Inc., Toronto</p>
+                                    <p>Oct 2019 - Mar 2020</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-content">
+            <h1 class="display-2">About Me</h1>
+            <p>I'm a self-driven Toronto-based developer.
+                Currently, I'm on the journey of obtaining Bachelor's degree in Software Development.</p><br>
+            <p>As a full-stack developer, my skills extend across both front-end and back-end development,
+                allowing me to contribute effectively to a wide range of projects.</p><br>
+
+            <!-- Non colored icons -->
+
+            <!-- <div id="skills">
+                <i class="devicon-html5-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-nodejs-plain-wordmark"></i>
+                <i class="devicon-react-original-wordmark"></i>
+                <i class="devicon-python-plain-wordmark"></i>
+                <i class="devicon-django-plain-wordmark"></i>
+                <i class="devicon-mongodb-plain-wordmark"></i>
+                <i class="devicon-azuresqldatabase-plain"></i>
+                <i class="devicon-amazonwebservices-plain-wordmark"></i>
+                <i class="devicon-docker-plain-wordmark"></i>
+                <i class="devicon-git-plain-wordmark"></i>
+            </div> -->
+
+            <div id="skills">
+                <i class="devicon-html5-plain-wordmark colored"></i>
+                <i class="devicon-css3-plain-wordmark colored"></i>
+                <i class="devicon-javascript-plain"></i>
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                <i class="devicon-react-original-wordmark colored"></i>
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" />
+                <i class="devicon-django-plain-wordmark colored"></i>
+                <i class="devicon-mongodb-plain-wordmark colored"></i>
+                <i class="devicon-azuresqldatabase-plain colored"></i>
+                <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" />
+                <i class="devicon-docker-plain-wordmark colored"></i>
+                <i class="devicon-git-plain-wordmark colored"></i>
+            </div>
+
+            <br>
+            <p> I love developing interesting projects, starting with the creation of Figma mockups, and then
+                transforming them into dynamic, functional experiences.</p><br>
+            <p>Be sure to check my portfolio below!</p>
+        </div>
+
+        <div id="scroll-down">
+            <a href="#projects">
+                <img src="./img/arrow-no-outline.png" id="scroll-down-icon" alt="scroll-down" width="35" height="35">
+            </a>
+        </div>
     </section>
 
     <section id="projects">
