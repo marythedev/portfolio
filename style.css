@@ -184,13 +184,22 @@ section {
 
 /* About Section */
 #about {
-    padding: 30px 20% 30px 475px;
+    padding: 30px 0;
+    padding-left: 0;
     position: relative;
+    min-height: fit-content;
+    height: fit-content;
+    padding-bottom: 100px;
+}
+
+#about-content {
+    padding-left: 475px;
+    padding-right: 100px;
 }
 
 #line-gradient {
     display: block;
-    min-height: 100vh;
+    min-height: 100%;
     height: 100%;
     margin: 0 50px;
     position: absolute;
@@ -216,7 +225,7 @@ section {
 .gradient-line>* {
     position: absolute;
     left: -10px;
-    top: 10%;
+    top: 150px;
 }
 
 .gradient-paragraph {
@@ -238,10 +247,6 @@ section {
     font-weight: 550;
 }
 
-#about-content {
-    font-size: 20px;
-}
-
 #skills i {
     font-size: 60px;
     opacity: 0.6;
@@ -259,8 +264,14 @@ section {
     gap: 10px;
 }
 
-#scroll-down {
-    width: 100%;
+#scroll-down:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+/* Projects Section */
+#projects {
+    padding: 30px 20%;
     text-align: center;
 }
 
@@ -277,6 +288,25 @@ footer {
 
 footer * {
     color: #fff;
+}
+
+@media screen and (min-width: 2171px){
+    #about {
+        padding-bottom: 300px;
+    }
+}
+
+
+@media screen and (min-width: 1647px){
+    #about {
+        padding-bottom: 175px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #about-content {
+        padding-right: 15%;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -379,6 +409,10 @@ footer * {
         padding: 30px 20%;
     }
 
+    #about-content {
+        padding: 0;
+    }
+
     #line-gradient {
         display: none;
     }
@@ -399,7 +433,12 @@ footer * {
         width: 100%;
     }
 
-    #about {
+    #about,
+    #projects {
         padding: 30px 30px;
+    }
+
+    #about-content {
+        padding: 0;
     }
 }
