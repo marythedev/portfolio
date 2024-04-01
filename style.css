@@ -297,6 +297,7 @@ footer * {
         height: 5px;
         margin: 5px 0;
         background-color: #212529;
+        border-radius: 3px;
     }
 
     #nav-icon span:not(span#mid) {
