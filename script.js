@@ -22,6 +22,36 @@ document.querySelectorAll('#nav-content a').forEach(link => {
     });
 });
 
+// toggle classes on mouse in and out
+document.querySelectorAll(".img-preview").forEach(img => {
+    let hover = img.getElementsByClassName("img-hover");
+    img.addEventListener("mouseover", () => {
+        hover[0].style.display = "flex";
+    });
+    img.addEventListener("mouseout", () => {
+        hover[0].style.display = "none";
+    });
+});
+
+//display/hide descriptions on project cards
+document.querySelectorAll(".project").forEach(project => {
+    let readDescription = project.getElementsByClassName("btn-description");
+    let goBack = project.getElementsByClassName("btn-go-back");
+    let preview = project.getElementsByClassName("preview");
+    let description = project.getElementsByClassName("description");
+
+    readDescription[0].addEventListener('click', (e) => {
+        preview[0].style.display = "none";
+        description[0].style.display = "block";
+    });
+
+    goBack[0].addEventListener('click', (e) => {
+        preview[0].style.display = "block";
+        description[0].style.display = "none";
+        project.style.height = "auto";
+    });
+});
+
 // update footer with the current year
 document.getElementById("year").textContent = year;
 

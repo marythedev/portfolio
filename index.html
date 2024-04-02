@@ -35,7 +35,7 @@
                         <li><a href="#">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <!-- <li><a href="#contact">Contact</a></li> -->
                     </ul>
                     <a id="resume"
                         href="https://drive.google.com/file/d/1iewbEpQ_rz01SfrTeIvuZCyXpSW6ybbz/view?usp=sharing"
@@ -65,7 +65,7 @@
     <section id="about">
         <h1 class="display-2" style="text-align: center;">About Me</h1>
         <br>
-        
+
         <!--TIMELINE IDEA for future-->
         <!-- Gradient colors: #ee7752, #e73c7e, #23a6d5, #23d5ab -->
         <!-- <div class="d-flex flex-column" id="line-gradient">
@@ -156,17 +156,158 @@
     </section>
 
     <section id="projects">
-        <h1 class="display-2">Projects</h1>
+        <h1 class="display-2" style="text-align: center;">Projects</h1>
+        <br>
+
+        <div id="projects-content">
+            <div class="project">
+                <div class="preview">
+                    <div class="img-preview">
+                        <img src="./img/my-portfolio.png" alt="My portfolio preview" class="img-fluid">
+                        <div class="img-hover">
+                            <h1>My Portfolio</h1>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="https://marythedev.github.io/portfolio/" target="_blank">
+                            <button class="btn btn-dark rounded-0">View Project</button>
+                        </a>
+                        <button class="btn btn-description">Read Description</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>My Portfolio</h3>
+                    <br>
+                    <p>Welcome to my corner of the web! This project was created to showcase my skills and projects
+                        as a developer.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS, Bootstrap and JavaScript</p>
+                    <br>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="https://github.com/marythedev/portfolio" target="_blank">
+                            <button class="btn btn-outline-dark rounded-0">View Source Code</button>
+                        </a>
+                        <button class="btn btn-go-back">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="preview">
+                    <div class="img-preview">
+                        <img src="./img/top-manager.png" alt="Top Manager preview" class="img-fluid">
+                        <div class="img-hover">
+                            <h1>Top Manager</h1>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="https://top-manager.vercel.app/" target="_blank">
+                            <button class="btn btn-dark rounded-0">View Project</button>
+                        </a>
+                        <button class="btn btn-description">Read Description</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Top Manager</h3>
+                    <br>
+                    <p>Web application that is used to manage tasks and projects. Application has an authentication
+                        system and securely stores user's passwords following the hashing techniques. Application
+                        supports task and project management in various ways including editing and deletion.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS, Handlebars, JavaScript, Node.js, Express.js, MongoDB
+                    </p>
+                    <br>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="https://github.com/marythedev/top-manager" target="_blank">
+                            <button class="btn btn-outline-dark rounded-0">View Source Code</button>
+                        </a>
+                        <button class="btn btn-go-back">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="preview">
+                    <div class="img-preview">
+                        <img src="./img/webproject.png" alt="Web Project preview" class="img-fluid">
+                        <div class="img-hover">
+                            <h1>Web Project</h1>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="https://webproject2020.netlify.app/" target="_blank">
+                            <button class="btn btn-dark rounded-0">View Project</button>
+                        </a>
+                        <button class="btn btn-description">Read Description</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>Web Project</h3>
+                    <br>
+                    <p>Website designed to help new developers learn about software development. Website provides
+                        information about computer's history, career paths in technology, interesting and useful skills
+                        to start off the learning journey.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, CSS</p>
+                    <br>
+                    <div class="d-flex flex-row justify-content-between">
+                        <a href="https://github.com/marythedev/webproject-2020" target="_blank">
+                            <button class="btn btn-outline-dark rounded-0">View Source Code</button>
+                        </a>
+                        <button class="btn btn-go-back">Go Back</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="preview">
+                    <div class="img-preview">
+                        <img src="./img/ai-clauset.png" alt="AI Clauset preview" class="img-fluid">
+                        <div class="img-hover">
+                            <h1>AI Clauset</h1>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <acronym title="Under Development. Release Date: April 21, 2024" style="cursor: pointer;">
+                            <button class="btn btn-dark rounded-0" disabled>View Project</button>
+                        </acronym>
+                        <button class="btn btn-description">Read Description</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <h3>AI Clauset</h3>
+                    <br>
+                    <p>AI-based solution to create day to day outfits. There is no longer a need to spend hours next to
+                        the wardrobe. AI clauset will create outfits based on current weather conditions and the
+                        clothes' images that user has uploaded.</p>
+                    <br>
+                    <p><strong>Technologies: </strong>HTML, Handlebars, CSS, Bootstrap, JavaScript, Node.js, Express.js,
+                        MongoDB, Azure AI Services</p>
+                    <br>
+                    <div class="d-flex flex-row justify-content-between">
+                        <acronym title="Release Date: April 21, 2024">
+                            <button class="btn btn-outline-dark rounded-0">Under Development</button>
+                        </acronym>
+                        <button class="btn btn-go-back">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
-    <section id="contact" class="d-flex flex-column justify-content-start">
+    <!-- <section id="contact" class="d-flex flex-column justify-content-start">
         <div id="contact-content">
             <h1>Contact</h1>
         </div>
         <footer>
             <small>&copy; <span id="year"></span> Maria Dmytrenko</small>
         </footer>
-    </section>
+    </section> -->
+
+    <footer>
+        <small>&copy; <span id="year"></span> Maria Dmytrenko</small>
+    </footer>
 
     <!-- https://github.com/VincentGarreau/particles.js/ -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
