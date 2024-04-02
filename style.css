@@ -288,7 +288,6 @@ section {
     max-width: 100vw;
     flex-basis: 375px;
     flex-grow: 0.5;
-    flex-shrink: 0.25;
     box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
     position: relative;
     height: 100%;
@@ -529,7 +528,8 @@ footer * {
         width: 100%;
     }
 
-    #about {
+    #about,
+    #projects {
         padding: 30px 30px;
     }
 
@@ -539,10 +539,6 @@ footer * {
 }
 
 @media screen and (max-width: 500px) {
-    .project {
-        flex-basis: 100%;
-    }
-
     .project .btn {
         font-size: 0.8rem;
     }
