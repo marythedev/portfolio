@@ -1,13 +1,12 @@
-const navIcon = document.getElementById("nav-icon");
 const navContent = document.getElementById("nav-content");
+const hamburgerIcon = document.getElementById("hamburger-icon");
 const resumeButton = document.querySelector("#resume button");
-const redirectionElements = document.querySelectorAll(".no-link-change");
-let year = new Date().getFullYear();
+const year = new Date().getFullYear();
 
 // expand and collapse the navigation menu
-navIcon.addEventListener("click", () => {
+hamburgerIcon.addEventListener("click", () => {
     document.body.classList.toggle("hide-overflow");
-    navIcon.classList.toggle("activated");
+    hamburgerIcon.classList.toggle("activated");
     navContent.classList.toggle("activated");
 });
 
@@ -16,15 +15,15 @@ document.querySelectorAll('#nav-content a').forEach(link => {
     link.addEventListener('click', (e) => {
         if (navContent.classList.contains("activated")) {
             document.body.classList.remove("hide-overflow");
-            navIcon.classList.remove("activated");
+            hamburgerIcon.classList.remove("activated");
             navContent.classList.remove("activated");
         }
     });
 });
 
 // toggle classes on mouse in and out
-document.querySelectorAll(".img-preview").forEach(img => {
-    let hover = img.getElementsByClassName("img-hover");
+document.querySelectorAll(".project-img-preview").forEach(img => {
+    let hover = img.getElementsByClassName("project-img-hover");
     img.addEventListener("mouseover", () => {
         hover[0].style.display = "flex";
     });
@@ -35,10 +34,10 @@ document.querySelectorAll(".img-preview").forEach(img => {
 
 //display/hide descriptions on project cards
 document.querySelectorAll(".project").forEach(project => {
-    let readDescription = project.getElementsByClassName("btn-description");
-    let goBack = project.getElementsByClassName("btn-go-back");
-    let preview = project.getElementsByClassName("preview");
-    let description = project.getElementsByClassName("description");
+    let readDescription = project.getElementsByClassName("view-project-description");
+    let goBack = project.getElementsByClassName("view-project-preview");
+    let preview = project.getElementsByClassName("project-preview");
+    let description = project.getElementsByClassName("project-description");
 
     readDescription[0].addEventListener('click', (e) => {
         preview[0].style.display = "none";
