@@ -279,16 +279,18 @@ a.underline:hover {
 
 #contact input {
     width: 50%;
-    border: none;
     padding: 10px 5px;
     margin-bottom: 20px;
+    border: none;
     border-bottom: 1px solid #212529;
+    border-radius: 0;
 }
 
 #contact textarea {
     padding: 15px;
     margin-top: 10px;
     margin-bottom: 30px;
+    border-radius: 0;
 }
 
 #send-message {
