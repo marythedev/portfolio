@@ -42,12 +42,14 @@ document.querySelectorAll(".project").forEach(project => {
     readDescription[0].addEventListener('click', (e) => {
         preview[0].style.display = "none";
         description[0].style.display = "block";
+        project.classList.add("show-back");
     });
 
     goBack[0].addEventListener('click', (e) => {
         preview[0].style.display = "block";
         description[0].style.display = "none";
         project.style.height = "auto";
+        project.classList.remove("show-back");
     });
 });
 

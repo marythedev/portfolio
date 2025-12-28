@@ -198,11 +198,31 @@ a.underline:hover {
     flex-basis: 375px;
     flex-grow: 0.5;
     box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
+
+    width: 100%;
+    perspective: 1000px;
+    box-shadow: none;
+}
+
+.project-content {
+    position: relative;
+    width: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
+}
+
+.project.show-back .project-content {
+    transform: rotateY(180deg);
 }
 
 .project-description {
     display: none;
     padding: 20px;
+
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .project-preview {
@@ -215,6 +235,7 @@ a.underline:hover {
 
 .project-img-preview:hover {
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .project-img-hover {
@@ -233,12 +254,15 @@ a.underline:hover {
 }
 
 .project button {
-    margin: 10px;
     padding: 5px 10px;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project .project-preview button {
+    margin: 10px;
 }
 
 .project .btn-dark {
@@ -313,6 +337,7 @@ footer * {
 
 /* Responsive Design */
 @media screen and (min-width: 2171px) {
+
     #about,
     #projects {
         padding-bottom: 300px;
@@ -320,6 +345,7 @@ footer * {
 }
 
 @media screen and (min-width: 1647px) {
+
     #about,
     #projects {
         padding-bottom: 175px;
@@ -336,6 +362,7 @@ footer * {
 }
 
 @media screen and (max-width: 992px) {
+
     /* Navbar */
     header {
         background-color: transparent;
