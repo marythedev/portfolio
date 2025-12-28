@@ -149,7 +149,7 @@ img.scroll-down {
 
 /* About Section */
 #about {
-    padding: 30px 20%;
+    padding: 30px 18%;
     padding-bottom: 100px;
     min-height: fit-content;
     height: fit-content;
@@ -184,7 +184,7 @@ a.underline:hover {
 
 /* Projects Section */
 #projects {
-    padding: 30px 20%;
+    padding: 30px 18%;
     padding-bottom: 100px;
     min-height: fit-content;
     height: fit-content;
@@ -192,7 +192,7 @@ a.underline:hover {
 
 #projects-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     gap: 30px;
     justify-items: center;
     align-items: start;
@@ -233,7 +233,7 @@ a.underline:hover {
 }
 
 .project-img-preview:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     cursor: pointer;
 }
 
@@ -285,7 +285,7 @@ a.underline:hover {
 
 /* Contact Section */
 #contact {
-    padding: 30px 20%;
+    padding: 30px 18%;
     padding-bottom: 100px;
     min-height: fit-content;
     height: fit-content;
@@ -482,8 +482,13 @@ footer * {
     #about,
     #projects,
     #contact {
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    #projects-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
     }
 
     #contact input,
