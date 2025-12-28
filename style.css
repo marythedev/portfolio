@@ -191,17 +191,16 @@ a.underline:hover {
 }
 
 #projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
     gap: 30px;
+    justify-items: center;
+    align-items: start;
 }
 
 .project {
-    flex-basis: 375px;
-    flex-grow: 0.5;
-    box-shadow: 0 1px 10px -1px rgba(0, 0, 0, 0.3);
-
     width: 100%;
     perspective: 1000px;
-    box-shadow: none;
 }
 
 .project-content {

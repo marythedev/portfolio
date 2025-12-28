@@ -34,7 +34,7 @@
                 </div>
                 <div id="nav-content" class="d-flex justify-content-center align-items-center">
                     <ul class="d-flex justify-content-center">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -53,16 +53,16 @@
             <h3 class="display-6 text-muted">Fullstack Developer</h3>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/marythedev/" target="_blank">
-                    <img src="./img/linkedin-logo.png" alt="linkedin" width="40" height="40">
+                    <img src="./img/icons/linkedin-logo.png" alt="linkedin" width="40" height="40">
                 </a>
                 <a href="https://github.com/marythedev" target="_blank">
-                    <img src="./img/github-logo.png" alt="github" width="41" height="40">
+                    <img src="./img/icons/github-logo.png" alt="github" width="41" height="40">
                 </a>
             </div>
         </div>
 
         <a href="#about">
-            <img src="./img/arrow.png" class="scroll-down" alt="scroll-down" width="35" height="35">
+            <img src="./img/icons/arrow.png" class="scroll-down" alt="scroll-down" width="35" height="35">
         </a>
     </section>
 
@@ -108,23 +108,63 @@
         <h1 class="display-2">Projects</h1>
         <br>
 
-        <div id="projects-content" class="d-flex flex-row flex-wrap justify-content-center align-items-start">
+        <div id="projects-content">
+            <div class="project">
+                <div class="project-content">
+                    <div class="project-preview">
+                        <a href="https://we-eventhub.up.railway.app/" target="_blank">
+                            <div class="project-img-preview">
+                                <img src="./img/projects/eventhub.png" alt="Eventhub preview" class="img-fluid">
+                                <div class="project-img-hover">
+                                    <h1>Eventhub</h1>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="d-flex flex-row justify-content-between">
+                            <a href="https://we-eventhub.up.railway.app/" target="_blank">
+                                <button class="btn btn-dark rounded-0">View Live</button>
+                            </a>
+                            <button class="view-project-description">Details</button>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Eventhub</h3>
+                        <br>
+                        <p>Eventhub is a simple, responsive and user-friendly platform that makes buying and selling
+                            tickets for events easier than ever. It was created to solve common frustrations with
+                            traditional ticketing platforms such as complicated interfaces, outdated designs and poor
+                            user experience. The goal was to make it easy for anyone to become an event organizer or
+                            attendee, without complications on either side.
+                        </p>
+                        <br>
+                        <p><strong>Technologies: </strong>Python, Django, PostgreSQL (SQL), HTML, CSS and JavaScript</p>
+                        <br>
+                        <div class="d-flex flex-row justify-content-between">
+                            <a href="https://github.com/marythedev/eventhub" target="_blank">
+                                <button class="btn btn-outline-dark rounded-0">View on Github</button>
+                            </a>
+                            <button class="view-project-preview">Go Back</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="project">
                 <div class="project-content">
                     <div class="project-preview">
                         <a href="https://marythedev.github.io/portfolio/" target="_blank">
                             <div class="project-img-preview">
-                                <img src="./img/my-portfolio.png" alt="My portfolio preview" class="img-fluid">
+                                <img src="./img/projects/my-portfolio.png" alt="My portfolio preview" class="img-fluid">
                                 <div class="project-img-hover">
                                     <h1>My Portfolio</h1>
                                 </div>
                             </div>
                         </a>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <a href="https://marythedev.github.io/portfolio/" target="_blank">
                                 <button class="btn btn-dark rounded-0">View Live</button>
                             </a>
-                            <button class="view-project-description">About Project</button>
+                            <button class="view-project-description">Details</button>
                         </div>
                     </div>
                     <div class="project-description">
@@ -135,9 +175,9 @@
                         <br>
                         <p><strong>Technologies: </strong>HTML, CSS, Bootstrap and JavaScript</p>
                         <br>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <a href="https://github.com/marythedev/portfolio" target="_blank">
-                                <button class="btn btn-outline-dark rounded-0">View Code</button>
+                                <button class="btn btn-outline-dark rounded-0">View on Github</button>
                             </a>
                             <button class="view-project-preview">Go Back</button>
                         </div>
@@ -150,17 +190,17 @@
                     <div class="project-preview">
                         <a href="https://top-manager.vercel.app/" target="_blank">
                             <div class="project-img-preview">
-                                <img src="./img/top-manager.png" alt="TopManager preview" class="img-fluid">
+                                <img src="./img/projects/top-manager.png" alt="TopManager preview" class="img-fluid">
                                 <div class="project-img-hover">
                                     <h1>TopManager</h1>
                                 </div>
                             </div>
                         </a>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <a href="https://top-manager.vercel.app/" target="_blank">
                                 <button class="btn btn-dark rounded-0">View Live</button>
                             </a>
-                            <button class="view-project-description">About Project</button>
+                            <button class="view-project-description">Details</button>
                         </div>
                     </div>
                     <div class="project-description">
@@ -175,9 +215,9 @@
                         <p><strong>Technologies: </strong>JavaScript, Node.js, Express.js, HTML, CSS, Handlebars,
                             MongoDB</p>
                         <br>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <a href="https://github.com/marythedev/top-manager" target="_blank">
-                                <button class="btn btn-outline-dark rounded-0">View Code</button>
+                                <button class="btn btn-outline-dark rounded-0">View on Github</button>
                             </a>
                             <button class="view-project-preview">Go Back</button>
                         </div>
@@ -190,17 +230,17 @@
                     <div class="project-preview">
                         <a href="https://webproject2020.netlify.app/" target="_blank">
                             <div class="project-img-preview">
-                                <img src="./img/webproject.png" alt="Web Project preview" class="img-fluid">
+                                <img src="./img/projects/webproject.png" alt="Web Project preview" class="img-fluid">
                                 <div class="project-img-hover">
                                     <h1>Web Project</h1>
                                 </div>
                             </div>
                         </a>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <a href="https://webproject2020.netlify.app/" target="_blank">
                                 <button class="btn btn-dark rounded-0">View Live</button>
                             </a>
-                            <button class="view-project-description">About Project</button>
+                            <button class="view-project-description">Details</button>
                         </div>
                     </div>
                     <div class="project-description">
@@ -213,9 +253,9 @@
                         <br>
                         <p><strong>Technologies: </strong>HTML, CSS, JavaScript</p>
                         <br>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <a href="https://github.com/marythedev/webproject-2020" target="_blank">
-                                <button class="btn btn-outline-dark rounded-0">View Code</button>
+                                <button class="btn btn-outline-dark rounded-0">View on Github</button>
                             </a>
                             <button class="view-project-preview">Go Back</button>
                         </div>
@@ -228,17 +268,17 @@
                     <div class="project-preview">
                         <a href="" target="_blank">
                             <div class="project-img-preview">
-                                <img src="./img/ai-clauset.png" alt="AI Clauset preview" class="img-fluid">
+                                <img src="./img/projects/ai-clauset.png" alt="AI Clauset preview" class="img-fluid">
                                 <div class="project-img-hover">
                                     <h1>AI Clauset</h1>
                                 </div>
                             </div>
                         </a>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <acronym>
                                 <button class="btn btn-dark rounded-0" disabled>View Live</button>
                             </acronym>
-                            <button class="view-project-description">About Project</button>
+                            <button class="view-project-description">Details</button>
                         </div>
                     </div>
                     <div class="project-description">
@@ -249,7 +289,7 @@
                             the wardrobe. AI clauset will create outfits based on current weather conditions and the
                             clothes' images that user has uploaded.</p>
                         <br>
-                        <div class="btn-row d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between">
                             <acronym>
                                 <button class="btn btn-outline-dark rounded-0" disabled>Under Development</button>
                             </acronym>
@@ -282,20 +322,20 @@
 
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/marythedev/" target="_blank">
-                    <img src="./img/linkedin-logo.png" alt="linkedin" height="35">
+                    <img src="./img/icons/linkedin-logo.png" alt="linkedin" height="35">
                 </a>
                 <a href="https://github.com/marythedev" target="_blank">
-                    <img src="./img/github-logo.png" alt="github" height="35">
+                    <img src="./img/icons/github-logo.png" alt="github" height="35">
                 </a>
                 <a href="mailto:marythedev@gmail.com" target="_blank">
-                    <img src="./img/email-logo.png" alt="email" height="31">
+                    <img src="./img/icons/email-logo.png" alt="email" height="31">
                 </a>
             </div>
         </div>
     </section>
 
     <footer>
-        <small>&copy; <span id="year"></span> Maria Dmytrenko</small>
+        <small>&copy; <small id="year"></small> Maria Dmytrenko</small>
     </footer>
 
     <!-- https://github.com/VincentGarreau/particles.js/ -->
